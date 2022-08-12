@@ -15,7 +15,7 @@
     1.  composer install, copy .env from .env.example, set up your own currencylayer api key as: CURRENCY_API_KEY=****
     2.  recommend use valet, install valet and  cd to /currency-convertor, run: valet link
     2.  setup your database connection in .env, and then run: php artisan migrate
-    3.  run: php artisan schedule:work, to retrieve data from API for one year of 5 currencies data, 
+    3.  run: php artisan schedule:work, to retrieve data from time frame API for one year of 5 currencies data, 
         this schedule work will save data to database currency table, if you did not run the schedule work, 
         there is no data for bar chart. The schedule cron run every 5 minutes, please wait for schedule or visit: http://currency-convertor.test/get_data
     4.  to run test case: php artisan test 
@@ -36,11 +36,11 @@
    
 5. How the UI look like: 
    
-   Main Screen:
+   Main Screen: show currency with live API, show report data with time frame API that run by schedule and save data list to database <br>
    <img src="https://github.com/lypk21/vue-currency/blob/master/home.png" width="600">
    
-   Login Screen:                 
+   Login Screen: <br>                
    <img src="https://github.com/lypk21/vue-currency/blob/master/login.png" width="600"> 
    
-   Register Screen:                 
+   Register Screen:  <br>               
    <img src="https://github.com/lypk21/vue-currency/blob/master/register.png" width="600">                 
