@@ -37,10 +37,10 @@
 5. How the UI look like: 
    
    Main Screen:
-   <img src="https://github.com/lypk21/vue-currency/home.png" width="600">
+   <img src="https://github.com/lypk21/vue-currency/blob/master/home.png" width="600">
    
    Login Screen:                 
-   <img src="https://github.com/lypk21/vue-currency/login.png" width="600"> 
+   <img src="https://github.com/lypk21/vue-currency/blob/master/login.png" width="600"> 
    
    Register Screen:                 
-   <img src="https://github.com/lypk21/vue-currency/register.png" width="600">                 
+   <img src="https://github.com/lypk21/vue-currency/blob/master/register.png" width="600">                 
