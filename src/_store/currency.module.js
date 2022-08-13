@@ -20,6 +20,7 @@ const actions = {
     },
 
     liveRate({ commit }, {source, currencies}) {
+        commit('liveRateLoading');
         currencyService.liveRate(source, currencies)
             .then(
                 res => commit('liveRateSuccess', res.data),
@@ -28,6 +29,7 @@ const actions = {
     },
 
     periodStatis({ commit }, {source, destination, period}) {
+        commit('periodStatisLoading');
         currencyService.periodStatis(source, destination, period)
             .then(
                 res => commit('periodStatisSuccess', {items:res.data, period}),
@@ -43,15 +45,18 @@ const mutations = {
     listCurrenciesFailure(state, error) {
         state.currencies = {error};
     },
-
+    liveRateLoading(state) {
+      state.rates = {loading: true}
+    },
     liveRateSuccess(state, items) {
         state.rates = {items}
     },
-
     liveRateFailure(state, error) {
         state.rates = {error}
     },
-
+    periodStatisLoading(state) {
+        state.periods = {loading: true}
+    },
     periodStatisSuccess(state, data) {
         state.periods = data
     },
